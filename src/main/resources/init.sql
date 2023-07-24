@@ -1,0 +1,20 @@
+create table IF NOT EXISTS sys_user(
+ id SERIAL primary key,
+ username varchar(50) not null,
+ salt varchar(100) not null,
+ `password` varchar(60) not null,
+ phone varchar(50) not null,
+ deptId varchar(50) not null,
+ deptName varchar(50) not null,
+ realName varchar(50) not null,
+ nickName varchar(50) not null,
+ email varchar(50) not null,
+ `status` integer,
+ sex integer,
+ deleted integer,
+ createId varchar(50) not null,
+ updateId varchar(50) not null,
+ createWhere integer,
+ createTime timestamp not null,
+ updateTime timestamp not null
+ );
